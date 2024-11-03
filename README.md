@@ -125,4 +125,10 @@ Utility function that fetches and parses the CSV data using [PapaParse](https://
    - Tailwind CSS classes in `App.css` ensure responsiveness, but you can adjust them for custom breakpoints.
 
 ## Screenshots
+1. **Charts**:
+![Charts-1](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/00542eb9857a2b5ad733797822bb3a24a8b45a8d/screenshots/Screenshot%202024-11-03%20at%202.19.37%E2%80%AFPM.png)
+![Charts-2](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/00542eb9857a2b5ad733797822bb3a24a8b45a8d/screenshots/Screenshot%202024-11-03%20at%202.19.46%E2%80%AFPM.png)
+
+2. **Table**:
+![Table](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/00542eb9857a2b5ad733797822bb3a24a8b45a8d/screenshots/Screenshot%202024-11-03%20at%202.20.11%E2%80%AFPM.png)
 ---
