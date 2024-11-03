@@ -1,3 +1,4 @@
+The application is hosted on Netlify and it is accessible on this link: https://672737d32d4bafa18d7f73a9--mapup-analytics.netlify.app/[https://672737d32d4bafa18d7f73a9--mapup-analytics.netlify.app/]
 ---
 # Electric Vehicle Analytics Dashboard
 
@@ -11,7 +12,7 @@ This project is a data visualization dashboard designed to showcase insights int
 4. [Usage](#usage)
 5. [Components](#components)
 6. [Customization](#customization)
-
+7. [Screenshots](#screenshots)
 ---
 
 ## Features
@@ -123,4 +124,5 @@ Utility function that fetches and parses the CSV data using [PapaParse](https://
 3. **Responsive Design Adjustments**:
    - Tailwind CSS classes in `App.css` ensure responsiveness, but you can adjust them for custom breakpoints.
 
+## Screenshots
 ---
