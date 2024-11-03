@@ -1,4 +1,4 @@
-The application is hosted on Netlify and it is accessible on this link: https://672737d32d4bafa18d7f73a9--mapup-analytics.netlify.app/[https://672737d32d4bafa18d7f73a9--mapup-analytics.netlify.app/]
+The application is hosted on Netlify and it is accessible on this link: https://672737d32d4bafa18d7f73a9--mapup-analytics.netlify.app/
 ---
 # Electric Vehicle Analytics Dashboard
 
