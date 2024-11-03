@@ -27,12 +27,6 @@ const Dashboard = () => {
       try {
         setLoading(true);
         let parsedData = await parseCSV('/Electric_Vehicle_Population_Data.csv');
-        parsedData = parsedData.map((item) => ({
-          ...item,
-          'Postal Code': item['Postal Code'] ? String(item['Postal Code']) : '',
-          'Legislative District': item['Legislative District'] ? String(item['Legislative District']) : '',
-          'DOL Vehicle ID': item['DOL Vehicle ID'] ? String(item['DOL Vehicle ID']) : '',
-        }));
         setEVData(parsedData);
         setFilteredData(parsedData);
       } catch (error) {
