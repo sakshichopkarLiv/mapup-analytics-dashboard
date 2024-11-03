@@ -1,45 +1,126 @@
-# MapUp - Analytics Dashboard Assessment
+---
+# Electric Vehicle Analytics Dashboard
 
-## Overview
+This project is a data visualization dashboard designed to showcase insights into electric vehicle (EV) population data, including charts, tables, and a search feature. Built with React, Ant Design, Tailwind CSS, and Recharts, it provides an interactive user experience for analyzing EV trends.
 
-The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills. Feel free to use any tech stack you want to create the dashboard.
+## Table of Contents
 
-## Dataset
+1. [Features](#features)
+2. [Project Structure](#project-structure)
+3. [Installation and Setup](#installation-and-setup)
+4. [Usage](#usage)
+5. [Components](#components)
+6. [Customization](#customization)
 
-The Electric Vehicle Population dataset is available in the [Electric Vehicle Population Data (CSV)](./data-to-visualize/Electric_Vehicle_Population_Data.csv) within this repository, for more information about the dataset visit [kaggle dataset](https://www.kaggle.com/datasets/willianoliveiragibin/electric-vehicle-population).
+---
 
-**Note:** We've reduced the dataset in the repository to keep the data size small in the frontend bundle.
+## Features
 
-## Tasks
+- **Data Parsing and Display**: Reads EV population data from a CSV file and displays it in a responsive table and multiple charts.
+- **Interactive Filtering and Searching**: Allows users to search and filter data by various fields (e.g., County, VIN, Make, Model).
+- **Dynamic Data Visualization**:
+  - **Top Counties by EV Count** (Bar Chart)
+  - **Vehicle Type Distribution** (Pie Chart)
+  - **Top EV Manufacturers** (Bar Chart)
+  - **Model Year Distribution** (Bar Chart)
+  - **CAFV Eligibility** (Pie Chart)
+- **Responsive Sidebar Navigation**: Toggle between table and chart views with a responsive sidebar and drawer.
+- **Responsive Design**: Optimized for various screen sizes using Tailwind CSS and Ant Design components.
 
-### Dashboard Creation:
+## Project Structure
 
-- Create a frontend dashboard that presents key insights from the dataset.
-- Design the dashboard to effectively communicate important metrics and visualizations.
-- Include visual representations such as charts, graphs, or tables to showcase trends and relationships in the data.
-- Ensure the dashboard is user-friendly and intuitive for exploring the dataset.
+```
+src
+├── App.css                          # Main Tailwind CSS and custom styles
+├── components                       # All reusable components
+│   ├── BarChartByCounty.js          # Bar chart showing top counties by EV count
+│   ├── CAFVEligibilityPieChart.js   # Pie chart showing CAFV eligibility distribution
+│   ├── EVTypePieChart.js            # Pie chart for vehicle type distribution
+│   ├── ModelYearDistributionChart.js # Bar chart for model year distribution
+│   ├── SearchComponent.js           # Search component for filtering table data
+│   ├── TopEVMakesBarChart.js        # Bar chart for top EV manufacturers
+│   └── styles/ChartStyles.css       # Custom styles for chart components
+├── pages                            # Main dashboard page
+│   └── Dashboard.js                 # Main Dashboard component
+├── utils
+│   └── csvParser.js                 # Utility to parse CSV data with PapaParse
+└── index.js                         # Application entry point
+```
 
-### Deployment:
+## Installation and Setup
 
-- Deploy your frontend dashboard to a hosting platform of your choice.
-- Make sure the dashboard is publicly accessible.
+### Prerequisites
 
-## Evaluation Criteria
+- **Node.js** and **npm** installed on your machine.
 
-Your submission will be evaluated based on:
+### Steps
 
-- **Analytical Depth:** The depth of your analysis and insights derived from the dataset.
-- **Dashboard Design:** Clarity, aesthetics, and usability of the frontend dashboard.
-- **Insightfulness:** Effectiveness in conveying key insights about electric vehicles.
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd electric-vehicle-dashboard
+   ```
 
-## Submission Guidelines
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-- Fork this repository to your GitHub account.
-- Complete your analysis and create the frontend dashboard.
-- Deploy the dashboard to a hosting platform.
-- Update this [README.md](README.md) file with the URL to your live dashboard.
-- **Repository Access:** Keep your repository private to avoid visibility by other candidates. Add the following email addresses as collaborators to the repository, these are our internal emails and will be evaluating your assessment:
-  - vedantp@mapup.ai
-  - ajayap@mapupa.ai
-  - divyanshs@mapup.ai
-- Finally, please fill out the google form that you received via email to submit the assessment for review.
+3. **Start the Application**:
+   ```bash
+   npm start
+   ```
+
+4. **Access the Application**:
+   - Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### CSV Data
+
+Place the CSV file (`Electric_Vehicle_Population_Data.csv`) at the root of your `public` directory to ensure proper loading by the app.
+
+## Usage
+
+1. **Navigate the Sidebar**:
+   - Toggle between **Charts** and **Table** views using the sidebar or drawer menu.
+
+2. **Search and Filter**:
+   - Use the search bar to filter data by county, VIN, make, or model.
+   - Select specific filters in the table view for more refined results.
+
+3. **View Charts**:
+   - Switch to the **Charts** view to visualize data on various metrics, such as the most popular EV makes, model year distribution, and CAFV eligibility.
+
+## Components
+
+### 1. `Dashboard.js`
+
+The main page component. Loads data, manages the sidebar and drawer, and renders charts or table views based on user selection.
+
+### 2. Chart Components
+
+- **`BarChartByCounty`**: Displays the top 6 counties with the most EV registrations.
+- **`EVTypePieChart`**: Shows distribution of EV types (e.g., battery, hybrid).
+- **`TopEVMakesBarChart`**: Highlights the top 5 EV manufacturers.
+- **`ModelYearDistributionChart`**: Visualizes the distribution of EV model years.
+- **`CAFVEligibilityPieChart`**: Illustrates the breakdown of CAFV eligibility.
+
+### 3. `SearchComponent.js`
+
+Provides a debounced search interface for filtering EV data. Allows selection of search fields and debounced input handling for smoother search performance.
+
+### 4. `csvParser.js`
+
+Utility function that fetches and parses the CSV data using [PapaParse](https://www.papaparse.com/) for smooth data handling.
+
+## Customization
+
+1. **Change Chart Colors**:
+   - Chart colors are specified in each chart component within the `COLORS` array. Update these arrays as desired.
+
+2. **Update Layout Styles**:
+   - Custom styling for summary cards, charts, and legends are in `ChartStyles.css` and `App.css`.
+
+3. **Responsive Design Adjustments**:
+   - Tailwind CSS classes in `App.css` ensure responsiveness, but you can adjust them for custom breakpoints.
+
+---
