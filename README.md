@@ -1,4 +1,4 @@
-The application is hosted on Netlify and it is accessible on this link: https://672737d32d4bafa18d7f73a9--mapup-analytics.netlify.app/
+The application is hosted on [Netlify](https://app.netlify.com/) and you can view the app on: [Link for the Fronted-WebApp](https://mapup-analytics.netlify.app/)
 ---
 # Electric Vehicle Analytics Dashboard
 
@@ -126,9 +126,9 @@ Utility function that fetches and parses the CSV data using [PapaParse](https://
 
 ## Screenshots
 1. **Charts**:
-![Charts-1](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/00542eb9857a2b5ad733797822bb3a24a8b45a8d/screenshots/Screenshot%202024-11-03%20at%202.19.37%E2%80%AFPM.png)
-![Charts-2](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/00542eb9857a2b5ad733797822bb3a24a8b45a8d/screenshots/Screenshot%202024-11-03%20at%202.19.46%E2%80%AFPM.png)
+![Charts-1](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/23faeacea7ec3c2caafef74e8818dbd0971e5e2d/screenshots/Screenshot%202024-11-03%20at%204.20.07%E2%80%AFPM.png)
+![Charts-2](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/23faeacea7ec3c2caafef74e8818dbd0971e5e2d/screenshots/Screenshot%202024-11-03%20at%204.20.18%E2%80%AFPM.png)
 
 2. **Table**:
-![Table](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/00542eb9857a2b5ad733797822bb3a24a8b45a8d/screenshots/Screenshot%202024-11-03%20at%202.20.11%E2%80%AFPM.png)
+![Table with Search text](https://github.com/sakshichopkarLiv/mapup-analytics-dashboard/blob/23faeacea7ec3c2caafef74e8818dbd0971e5e2d/screenshots/Screenshot%202024-11-03%20at%204.18.17%E2%80%AFPM.png)
 ---
